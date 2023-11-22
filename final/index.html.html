@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="XTRMGADGETS - Your Gadget Superstore. Explore the latest gadgets and technology.">
+    <title>XTRMGADGETS - Your Gadget Superstore</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Light gray background */
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50; /* Dark blue header */
+            color: #ecf0f1; /* White text */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .topnav {
+            text-align: center;
+            background-color: #34495e; /* Dark blue background */
+            overflow: hidden;
+            padding: 10px 0;
+        }
+
+        .topnav a {
+            display: inline-block;
+            color: #ecf0f1; /* White text */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #3d5169; /* Darker blue on hover */
+        }
+
+        .categories {
+            display: inline-block;
+        }
+
+        .search-container {
+            float: right;
+            margin-top: 10px;
+        }
+
+        input[type=text] {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type=text]:focus {
+            outline: none;
+            border-color: #555;
+        }
+
+        .active-hours {
+            float: right;
+            padding: 14px 16px;
+            color: #ecf0f1; /* White text */
+        }
+
+        section {
+            background-color: #ecf0f1; /* Light blue section background */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .gadget-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .gadget-icon {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product {
+            width: calc(25% - 20px);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-description {
+            margin-top: 10px;
+        }
+
+        .download-btn {
+            background-color: #2c3e50; /* Dark blue button */
+            color: #ecf0f1; /* White text */
+            padding: 8px 16px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-btn:hover {
+            background-color: #34495e; /* Slightly darker blue on hover */
+        }
+
+        .footer {
+            background-color: #2c3e50; /* Dark blue footer */
+            color: #ecf0f1; /* White text */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-links a {
+            color: #ecf0f1; /* White text */
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer-links a:hover {
+            border-bottom: 2px solid #ecf0f1; /* White underline on hover */
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>XTRMGADGETS</h1>
+    </header>
+
+    <nav class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <div class="categories">
+            <a href="#">Categories &#9662;</a>
+            <div class="dropdown-content">
+                <a href="#">Smartphones</a>
+                <a href="#">Laptops</a>
+                <a href="#">Wearables</a>
+                <!-- Add more categories as needed -->
+            </div>
+        </div>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search gadget..." name="search">
+            </form>
+        </div>
+        <div class="active-hours">
+            Active Hours: Mon-Fri 9AM-6PM
+        </div>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Featured Gadgets</h2>
+            <!-- Slideshow with different gadget photos -->
+            <div class="slideshow-container">
+                <img class="mySlides" src="https://source.unsplash.com/800x400/?smartphone" alt="Smartphone">
+                <img class="mySlides" src="https://source.unsplash.com/800x400/?laptop" alt="Laptop">
+                <img class="mySlides" src="https://source.unsplash.com/800x400/?wearable" alt="Wearable">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <section class="gadget-icons">
+            <!-- ... (Your existing gadget icons code) ... -->
+        </section>
+
+        <section>
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://source.unsplash.com/800x400/?laptop" alt="Laptop">
+                    <div class="product-description">
+                        <p><strong>Laptop</strong></p>
+                        <p>A powerful and sleek laptop for all your computing needs. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <button class="download-btn">view more>></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="2.jpg" alt="Samsung S23 Ultra">
+                    <div class="product-description">
+                        <p><strong>Samsung Galaxy Note 20 Ultra</strong></p>
+                        <p>Anti Peeping Privacy For Samsung Galaxy Note 20 Ultra </p>
+                        <button class="download-btn">view more>></button>
+                    </div>
+                </div>
+                <!-- Add two more product entries here -->
+                <div class="product">
+                    <img src="https://source.unsplash.com/800x400/?smartphone" alt="Smartphone">
+                    <div class="product-description">
+                        <p><strong>Smartphone</strong></p>
+                        <p>A variety of all your choices await you..</p>
+                        <button class="download-btn">view more>></button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://source.unsplash.com/800x400/?wearable" alt="Wearable">
+                    <div class="product-description">
+                        <p><strong>Wearable</strong></p>
+                        <p>Become your favorite by getting these.</p>
+                        <button class="download-btn">view more>></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Gadget Descriptions and Manuals</h2>
+            <ul>
+                <li>
+                   Laptops Description and Manual
+                    <button class="download-btn">Download</button>
+                </li>
+                <li>
+                   Mobile Phones Description and Manual
+                    <button class="download-btn">Download</button>
+                </li>
+                <li>
+                   Other gadgets Description and Manual
+                    <button class="download-btn">Download</button>
+                </li>
+                <!-- Add more gadget descriptions and manuals as needed -->
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Categories</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: info@xtrmgadgets.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="copyright">
+            &copy; 2023 XTRMGADGETS. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // ... (Your existing script) ...
+        // Updated downloadFile function
+        function downloadFile(filePath) {
+            // You can implement file download logic here
+            window.location.href = filePath;
+        }
+    </script>
+
+    <script>
+        // Image slideshow functionality
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+
+        // Start the slideshow when the page loads
+        window.onload = function () {
+            showSlides();
+        };
+    </script>
+
+</body>
+
+</html>
